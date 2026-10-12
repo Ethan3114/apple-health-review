@@ -1,0 +1,4 @@
+interface:
+  display_name: "苹果健康数据分析"
+  short_description: "转换 Apple Health 导出数据、核对健康 App 显示值并生成趋势报告"
+  default_prompt: "使用 $apple-health-review 处理这份健康数据导出，保留来源与跨日差异，生成结构化数据和中文分析报告。"
