@@ -56,3 +56,9 @@ V1 未复现苹果原生多来源统计合并。知道手表优先级，也不�
 脚本只在本地处理数据，无网络调用，不写入健康数据库。模型输入去除来源中的个人名称，但仍包含健康信息。请把自己的导出文件、截图和结果目录放在仓库外；仓库只包含代码和说明。
 
 开发与修改 skill 时，请保留 [reporting.md](references/reporting.md) 中对数据口径、证据和解释的要求。
+
+## Skill 介绍页
+
+[打开介绍页](https://ethan3114.github.io/apple-health-review/)：流程介绍、五类数据视角、预设 JSON 实验台与安装入口，支持中英文切换。页面数值均为虚构示例，不包含个人健康导出或截图。
+
+网站源码在 `site/`，GitHub Pages 静态产物在 `docs/`；修改后在 `site/` 运行 `npm ci` 和 `npm run build`，将产物同步到 `docs/`（含 `.nojekyll`）。
