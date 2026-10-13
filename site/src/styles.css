@@ -204,7 +204,7 @@ html[lang=zh-CN] .prompt-lab-copy h2{line-height:1.08}
 .prompt-workbench{width:min(1040px,100%);display:grid;grid-template-columns:1fr;gap:18px;align-items:stretch;text-align:left}
 .prompt-upload-card,.terminal-card{overflow:hidden;border:1px solid var(--color-border);border-radius:var(--radius-lg);background:var(--color-ink-2);box-shadow:var(--shadow-panel)}
 .prompt-upload-card{display:grid;grid-template-columns:minmax(240px,330px) minmax(0,1fr);grid-template-areas:"head head" "preview meta" "preview actions";-moz-column-gap:20px;column-gap:20px;min-height:auto;background:linear-gradient(145deg,rgb(var(--rgb-paper) / .065),rgb(var(--rgb-paper) / .028)),rgb(var(--rgb-ink-2) / .78);transition:border-color .22s var(--ease-out),box-shadow .22s var(--ease-out),transform .22s var(--ease-out)}
-.prompt-upload-card.is-active{border-color:var(--color-border-strong);box-shadow:var(--shadow-glow);transform:translateY(-2px)}
+.prompt-upload-card[data-active="true"]{border-color:var(--color-border-strong);box-shadow:var(--shadow-glow);transform:translateY(-2px)}
 .prompt-upload-head{grid-area:head;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:46px;border-bottom:1px solid var(--color-border);padding:0 14px}
 .prompt-upload-head span,.prompt-upload-head em{font-family:var(--font-mono);font-size:11px;font-style:normal;font-weight:760}
 .prompt-upload-head span{color:var(--color-cyan-2)}
@@ -212,7 +212,7 @@ html[lang=zh-CN] .prompt-lab-copy h2{line-height:1.08}
 .prompt-upload-preview{grid-area:preview;position:relative;overflow:hidden;width:auto;margin:16px 0 18px 18px;border:1px solid var(--color-border);border-radius:var(--radius-md);background:var(--color-ink);aspect-ratio:640 / 474}
 .prompt-upload-preview img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
 .upload-scanline{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none;background:linear-gradient(180deg,transparent,rgb(var(--rgb-cyan) / .42),transparent);opacity:0;transform:translateY(-100%)}
-.prompt-upload-card.is-active .upload-scanline{animation:upload-scan 1.2s var(--ease-soft) infinite;opacity:.72}
+.prompt-upload-card[data-active="true"] .upload-scanline{animation:upload-scan 1.2s var(--ease-soft) infinite;opacity:.72}
 .prompt-upload-meta{grid-area:meta;display:grid;grid-template-columns:auto minmax(0,1fr);align-self:end;gap:12px;width:auto;margin:0;padding:18px 18px 0 0}
 .prompt-upload-meta svg{color:var(--color-cyan-2)}
 .prompt-upload-meta small{display:block;color:var(--color-text-soft);font-family:var(--font-mono);font-size:11px;font-weight:760}
